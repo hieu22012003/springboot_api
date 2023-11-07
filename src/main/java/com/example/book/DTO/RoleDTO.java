@@ -1,10 +1,8 @@
-package com.example.book.DTO
+package com.example.book.DTO;
 
-import lombok.AllArgsConstructor
-import lombok.Getter
-import lombok.NoArgsConstructor
-import lombok.Setter
-import java.io.Serializable
+import lombok.*;
+
+import java.io.Serializable;
 
 
 @Getter
@@ -12,6 +10,6 @@ import java.io.Serializable
 @NoArgsConstructor
 @AllArgsConstructor
 public class RoleDTO implements Serializable {
-    private val id: Long? = null;
-    private val name: String? = null;
+    private Long id;
+    private String name;
 }

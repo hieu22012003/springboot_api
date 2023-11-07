@@ -1,17 +1,18 @@
-package com.example.book.DTO
+package com.example.book.DTO;
 
-import lombok.AllArgsConstructor
-import lombok.Getter
-import lombok.NoArgsConstructor
-import lombok.Setter
-import java.io.Serializable
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import java.io.Serializable;
+import java.util.List;
 
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-class UserDTO : Serializable {
-    private val name: String? = null;
-    private val roles: List<RoleDTO>? = null;
+public class UserDTO implements Serializable {
+    private String name;
+    private List<RoleDTO> roles;
 }
